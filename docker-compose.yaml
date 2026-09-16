@@ -1,4 +1,5 @@
 services:
- build: .
- ports:
-   - "8000:4000"
+  web:
+    build: .
+    ports:
+      - "8000:4000"
