@@ -1,4 +1,4 @@
-
+docker compose down
 ## Documentation
 
 [Documentation](https://linktodocumentation)
