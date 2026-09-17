@@ -1,6 +1,13 @@
 FROM node:24.14.1
-WORKDIR app
-COPY . /app
+
+WORKDIR /app
+
+COPY package*.json ./
+
 RUN npm install
-EXPOSE 4000
-CMD ["node","index.js"]
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["node", "index.js"]
