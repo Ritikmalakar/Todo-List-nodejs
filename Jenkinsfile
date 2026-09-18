@@ -1,14 +1,14 @@
 pipeline {
-    agent  label {'node-agent'}
+    agent {
+        label 'node-agent'
+    }
 
     stages {
 
         stage('Code') {
             steps {
-             
-                    git branch: 'master',
-                        url: 'https://github.com/Ritikmalakar/Todo-List-nodejs.git'
-
+                git branch: 'master',
+                    url: 'https://github.com/Ritikmalakar/Todo-List-nodejs.git'
             }
         }
 
