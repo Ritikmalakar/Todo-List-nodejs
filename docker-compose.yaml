@@ -1,6 +1,6 @@
 services:
   web:
     build: .
-    images: 'ritikmalakar/node-todo-cicd:latest '
+    image: 'ritikmalakar/node-todo-cicd:latest '
     ports:
       - "8000:4000"
